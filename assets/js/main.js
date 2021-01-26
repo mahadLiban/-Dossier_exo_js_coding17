@@ -94,13 +94,13 @@
 
 
 
-let classe = [ 
+/* let classe = [ 
 
      "abdel","amine","antoine","ayoub","bilal","camille","cem", "gauthier","laurie","mahad","mufassa","nghia","redwane","salim","said","yahya","yasmina","yassin"
      ]
    for(let i=0; i < classe.length ; i++ )
     console.log("bonjour "+classe [i]);
-   
+    */
 /* exo2 */
 /* let nombre = parseInt(prompt("Donne moi nombre"))
 
@@ -123,3 +123,110 @@ let classe = [
          "un", "deux","trois","quatre","cinq"
  ]
  ele.forEach(element => console.log(element)); */
+
+
+
+
+
+/*  exo3_boucles-for-foreach.md */
+
+/* exo1 */
+
+
+/* let multiplication = 5
+for (let i=0; i<=10; i++) 
+{
+    console.log(multiplication+" * " + i + " = " + multiplication*i);
+
+  }
+ */
+
+/* EXO2 */
+
+/* let multiplication = 5
+for (let i=0; i<=10; i+=2) 
+{
+    console.log(multiplication+" * " + i + " = " + multiplication*i);
+
+  } 
+  */
+
+
+/* EXO 3 */
+/* let nombre=2
+ 
+ for (let i=22; i>0; i-=2)
+ {
+     console.log(i);
+ 
+   }
+   */
+
+/* EXO 4 */
+
+ /* let classe = [ 
+
+  "abdel","amine","antoine","ayoub","bilal","camille","cem", "gauthier","laurie","mahad","mufassa","nghia","redwane","salim","said","yahya","yasmina","yassin"
+     
+  ]
+ 
+let longPrenoms = []
+
+classe.forEach(element => {
+  if (element.length>5){
+    longPrenoms.push(element)
+  }
+
+});
+console.log(longPrenoms);  */
+
+/* EXO 5 */
+
+/*  let somme = [
+   14, 7, 97, 65, 247, 67, 101, 4, 34, 78, 1, 900, 0, 11, 32, 23, 61
+  ]
+
+let grossesSommes = []
+
+somme.forEach(element => {
+  if (element>60) {
+    grossesSommes.push(element)
+    
+  }
+  
+}); 
+console.log(grossesSommes)
+ */
+
+let donnees = [
+  17, 7, 97, {}, "247", 67, 101, true, 34, 78 , [], 'coding school', 0, 11, 32, "italie", 61, null, 'cent', 100
+];
+
+let typeString=[]
+let typeNumber=[]
+let typeObject=[]
+let typeAutre=[]
+
+donnees.forEach(element => {
+    if (typeof element== "string") {
+    typeString.push(element)
+    
+  } else if (typeof element == "number") {
+    typeNumber.push(element)
+  }else if (typeof element == "object"){
+    typeObject.push(element)
+  }else {
+    typeAutre.push(element)
+  }
+ 
+ });
+console.log(typeString);
+
+console.log(typeNumber);
+
+console.log(typeObject);
+
+console.log(typeAutre);
+
+
+
