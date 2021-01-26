@@ -153,14 +153,14 @@ for (let i=0; i<=10; i+=2)
 
 
 /* EXO 3 */
-/* let nombre=2
+/*  
  
- for (let i=22; i>0; i-=2)
+ for (let i=20; i>=0; i-=2)
  {
      console.log(i);
  
    }
-   */
+    */
 
 /* EXO 4 */
 
@@ -195,10 +195,13 @@ somme.forEach(element => {
   }
   
 }); 
-console.log(grossesSommes)
- */
+console.table(grossesSommes)
+console.table(somme)
 
-let donnees = [
+  */
+
+/* EXO6 */
+/*  let donnees = [
   17, 7, 97, {}, "247", 67, 101, true, 34, 78 , [], 'coding school', 0, 11, 32, "italie", 61, null, 'cent', 100
 ];
 
@@ -208,7 +211,7 @@ let typeObject=[]
 let typeAutre=[]
 
 donnees.forEach(element => {
-    if (typeof element== "string") {
+    if (typeof  element== "string") {
     typeString.push(element)
     
   } else if (typeof element == "number") {
@@ -226,7 +229,69 @@ console.log(typeNumber);
 
 console.log(typeObject);
 
-console.log(typeAutre);
+console.log(typeAutre); */
 
 
+ /* EXO4_BOUCLES-while.md */
 
+
+ /* EXO1 */
+
+
+/* let chiffre = parseInt(prompt("choissez un chiffre"))
+
+let compteur = 0
+
+while (compteur <= chiffre) {
+  console.log(compteur);
+  compteur++;
+}
+
+
+ */
+
+/* EXO2 */
+/*  let classe= [
+  "abdel","amine","antoine","ayoub","bilal","camille","cem", "gauthier","laurie","mahad","mufassa","nghia","redwane","salim","said","yahya","yasmina","yassin"
+]
+let i=0
+
+while (classe.length>i) {
+
+  console.log("Bonjour "+classe[i]);
+  i++;
+}
+ */
+
+ /* let classe =[
+  "abdel","amine","antoine","ayoub","bilal","camille","cem", "gauthier","laurie","mahad","mufassa","nghia","redwane","salim","said","yahya","yasmina","yassin"
+ ]
+
+ let i = 0
+
+ while (classe.length>i) {
+   console.log("bonjour "+classe[i]);
+   i++;
+ } */
+
+
+ /* let tabl=[
+  "abdel","amine","antoine","ayoub","bilal","camille","cem", "gauthier","laurie","mahad","mufassa","nghia","redwane","salim","said","yahya","yasmina","yassin"
+ ]
+
+ let i = 0
+
+ while (tabl.length>i) {
+   console.log("bonjour "+ tabl[i]);
+   i++;
+ } */
+
+ /* let classe = []
+
+ let nombre = parseInt(prompt("donne moi un nombre max d'étudiants dans la classe "))
+
+ while (classe.length<nombre) {
+   classe.push(prompt("donne moi un nom a push"))
+   
+ }
+ console.log(classe); */
