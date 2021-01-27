@@ -295,3 +295,43 @@ while (classe.length>i) {
    
  }
  console.log(classe); */
+
+/* EXO1 */
+/* let chiffre = parseInt(prompt("choisissez un chiffre"))
+
+let compteur = 0
+
+
+do { 
+  console.log(compteur);
+  compteur++;
+} while (compteur <= chiffre);
+ */
+
+ /* EXO2 */
+
+ let classe = [
+  "abdel","amine","antoine","ayoub","bilal","camille","cem", "gauthier","laurie","mahad","mufassa","nghia","redwane","salim","said","yahya","yasmina","yassin"
+ ]
+
+ let i = 0
+
+ do {
+   console.log("Salut "+classe[i]);
+   i++;
+ } while (classe.length>i); 
+
+ /* EXO3 */
+
+
+ /* let fruit = [
+   "muss","abdel","said","mahad","gauthii","banane"
+ ]
+
+ let i = 0
+
+ do {
+   i--
+   console.log(fruit);
+ } while (fruit.shift());
+  */
