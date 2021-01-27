@@ -455,6 +455,7 @@ do {
 console.table(panierFruits);
 
 let enlever = prompt("Tu veux enlever un fruit ? "+ panierFruits)
+enlever = enlever.charAt(0).toUpperCase()+enlever.slice(1).toLowerCase()
 
 do {
   if (panierFruits.includes(enlever))  {
