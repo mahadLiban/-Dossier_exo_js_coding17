@@ -285,7 +285,7 @@ while (classe.length>i) {
    console.log("bonjour "+ tabl[i]);
    i++;
  } */
-
+/* EXO3 */
  /* let classe = []
 
  let nombre = parseInt(prompt("donne moi un nombre max d'étudiants dans la classe "))
@@ -310,7 +310,7 @@ do {
 
  /* EXO2 */
 
- let classe = [
+ /* let classe = [
   "abdel","amine","antoine","ayoub","bilal","camille","cem", "gauthier","laurie","mahad","mufassa","nghia","redwane","salim","said","yahya","yasmina","yassin"
  ]
 
@@ -319,19 +319,148 @@ do {
  do {
    console.log("Salut "+classe[i]);
    i++;
- } while (classe.length>i); 
+ } while (classe.length>i); */ 
 
  /* EXO3 */
 
 
- /* let fruit = [
+/*   let fruit = [
    "muss","abdel","said","mahad","gauthii","banane"
  ]
 
  let i = 0
 
  do {
-   i--
+   i--;
    console.log(fruit);
  } while (fruit.shift());
-  */
+   */
+
+/*  # Boucles WHILE && DO...WHILE */
+/* ## Exo 1 Boucles simples */
+
+/*  let valeur = parseInt(prompt("Donne une valeur chien")) 
+
+ while (!valeur ||isNaN(valeur)) { 
+   valeur = prompt('entrez un chiffre ')
+  
+}
+alert(valeur)
+  
+ */
+
+ /* let valeur = parseInt(prompt("Donne une valeur chien")) 
+
+ while (!valeur || isNaN || (valeur)<10) { 
+  valeur = prompt('entrez un chiffre ')
+  
+}
+alert(valeur) */
+
+/* let valeur = parseInt(prompt("Donne une valeur ")) 
+let i = 0; 
+
+while (i==i) { 
+  i++;
+  console.log(i);
+}
+ */
+
+/* let i = 2; 
+
+while (i<6) { 
+  i++;
+  console.log(i);
+} */
+
+/* let i = 0; 
+
+while (i<20) { 
+ i+=2;
+  console.log(i);
+} */
+
+/* EXO2 */
+
+/* let panierLegumes = [
+  "salade","tomate","radis","gauth"
+]
+let caisseLegumes = []
+
+while (panierLegumes.length>0) {
+
+  caisseLegumes.push(panierLegumes.shift())
+
+}
+
+console.log(panierLegumes);
+console.log(caisseLegumes); */
+
+/* Exo4 */
+
+/* let enigme = prompt('De quelle couleur est le cheval blanc de napoléon')
+
+while (enigme !== "blanc") {
+  enigme=prompt('De quelle couleur est le cheval blanc de napoléon')
+  
+}
+alert('Bien joué bg') */
+
+/*Exo5  */
+
+/* let enigme = prompt('De quelle couleur est le cheval blanc de napoléon')
+
+do {
+  enigme=prompt('De quelle couleur est le cheval blanc de napoléon')
+} while (enigme !== "blanc");
+alert("c'est bon") */
+
+/* Exo6 */
+/*  let annee = 2021
+let randomYear = Math.floor(Math.random() * (annee - 1970 +1)) + 1970;
+
+
+
+
+ let question 
+
+let reponse = annee - randomYear
+ 
+ let i = 1;
+
+do {
+   question = prompt("Si je suis né(e) en "+randomYear+ " , quel âge ai-je aujourd’hui ?");
+  i++;
+     
+} while (question != reponse && i<=3 ) 
+ 
+ if (question == reponse) {
+       alert("C'est pertinant")
+     } else {
+       alert("t'es con ou quoi?")
+     } */
+
+/* Exo7 */
+let panierFruits = [ ]
+
+
+do {
+  let fruit= prompt("remplie le panier")
+
+  fruit = fruit.charAt(0).toUpperCase()+fruit.slice(1).toLowerCase()
+  panierFruits.push(fruit)
+
+    
+} while (panierFruits.length<3);
+console.table(panierFruits);
+
+let enlever = prompt("Tu veux enlever un fruit ? "+ panierFruits)
+
+do {
+  if (panierFruits.includes(enlever))  {
+    panierFruits.splice(panierFruits.indexOf(enlever),1)
+    enlever = prompt("Tu veux enlever un fruit ? "+ panierFruits)
+  } 
+} while (panierFruits.includes(enlever));
+console.table(panierFruits);
+alert("Merci bon appétit")
