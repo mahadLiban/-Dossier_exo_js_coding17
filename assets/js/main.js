@@ -339,9 +339,8 @@ do {
 /*  # Boucles WHILE && DO...WHILE */
 /* ## Exo 1 Boucles simples */
 
-/*  let valeur = parseInt(prompt("Donne une valeur chien")) 
-
- while (!valeur ||isNaN(valeur)) { 
+/*  let valeur 
+ while (!valeur.trim()) { 
    valeur = prompt('entrez un chiffre ')
   
 }
@@ -398,17 +397,17 @@ console.log(caisseLegumes); */
 
 /* Exo4 */
 
-/* let enigme = prompt('De quelle couleur est le cheval blanc de napoléon')
+/*  let enigme = prompt('De quelle couleur est le cheval blanc de napoléon')
 
-while (enigme !== "blanc") {
+while (enigme != "blanc" ) {
   enigme=prompt('De quelle couleur est le cheval blanc de napoléon')
   
 }
-alert('Bien joué bg') */
-
+alert('Bien joué bg') 
+ */
 /*Exo5  */
 
-/* let enigme = prompt('De quelle couleur est le cheval blanc de napoléon')
+/* let enigme 
 
 do {
   enigme=prompt('De quelle couleur est le cheval blanc de napoléon')
@@ -441,7 +440,7 @@ do {
      } */
 
 /* Exo7 */
-let panierFruits = [ ]
+/* let panierFruits = [ ]
 
 
 do {
@@ -454,14 +453,135 @@ do {
 } while (panierFruits.length<3);
 console.table(panierFruits);
 
-let enlever = prompt("Tu veux enlever un fruit ? "+ panierFruits)
-enlever = enlever.charAt(0).toUpperCase()+enlever.slice(1).toLowerCase()
+let enlever
+let i = 1;
 
 do {
-  if (panierFruits.includes(enlever))  {
+  i=0;
+  enlever = prompt("Tu veux enlever un fruit ? "+ panierFruits)
+  enlever = enlever.charAt(0).toUpperCase()+enlever.slice(1).toLowerCase()
+  if (panierFruits.includes(enlever)&& enlever!="") {
     panierFruits.splice(panierFruits.indexOf(enlever),1)
-    enlever = prompt("Tu veux enlever un fruit ? "+ panierFruits)
-  } 
-} while (panierFruits.includes(enlever));
+  i++;
+  }
+  
+} while (i>0);
 console.table(panierFruits);
-alert("Merci bon appétit")
+alert("Merci bon appétit") 
+
+ */
+
+
+/* let annee = 2021
+let randomYear = Math.floor(Math.random() * (annee - 1970 +1)) + 1970;
+
+
+
+
+ let question 
+
+let reponse = annee - randomYear
+ 
+ let i = 1;
+
+do {
+   question = prompt("Si je suis né(e) en "+randomYear+ " , quel âge ai-je aujourd’hui ?");
+  i++;
+     
+} while (question != reponse && i<=3 ) 
+ 
+ if (question == reponse) {
+       alert("C'est pertinant")
+     } else {
+       alert("t'es con ou quoi?")
+     } 
+
+     
+ */
+
+
+ /* EXO_INTRO_FONCTION.md */
+
+ /* # Exo 1 Additionner */
+ 
+/*  let maFonction = (parm1,parm2) =>{
+  console.log(parm1+parm2);
+};
+maFonction(12 , 54) */
+
+/*deuxieme maniere de faire */
+/* let maFonction = (parm1,parm2) =>{
+  return(parm1+parm2);
+};
+console.log(maFonction(12 , 54));
+ */
+/* # Exo 2 Soustraire */
+/* let maFonction = (parm1,parm2)=> {
+  return(parm1-parm2)
+}
+console.log(maFonction(12,54)); */
+
+/* # Exo 3 Multiplication*/
+/* let maFonction = (parm1,parm2) =>{
+  return(parm1*parm2);
+};
+console.log(maFonction(12 , 54));
+ */
+/* # Exo 4 Division*/
+/* let maFonction = (parm1,parm2) =>{
+  return(parm1/parm2);
+};
+console.log(maFonction(12 , 54)); */
+
+/* Exo 5 Modulo */
+/* let maFonction = (parm1,parm2) =>{
+  return(parm1%parm2);
+};
+console.log(maFonction(12 , 54)); */
+
+/* # Exo 6 Carré */
+/* let maFonction = (parm1) =>{
+  return(parm1^2);
+};
+console.log(maFonction(12 , 54)); */
+/* # Exo 7 Exposant */
+/* let maFonction = (parm1,parm2) =>{
+  return(parm1^parm2);
+};
+console.log(maFonction(12 , 54)); */
+
+/* # Exo 8 Capitalize */
+/* let maFonction = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+console.log(maFonction("sALRUDJD")); */
+
+/* # Exo 9 Calcul */
+/* let  monCalcul = (nombre, secondNombre, opera) => {
+  
+  switch (opera) {
+       case "*":
+        return(nombre*secondNombre)
+       break;
+       case "+":
+        return(nombre+secondNombre)
+       break; 
+       case "-":
+        return(nombre-secondNombre)
+       break; 
+       case "/":
+        return(nombre/secondNombre)
+       break; 
+       default:
+        return("a quoi tu joues ? on veut un opé!")
+           break;
+   }
+  
+}
+console.log(monCalcul(5,5,"*"));
+
+ let valeur1= parseInt(prompt("donne un nombre"))
+ let valeur2= parseInt(prompt("donne un nombre"))
+ let opera= prompt("donne moi une operation")
+
+ alert(monCalcul(valeur1 ,valeur2,opera))  */
