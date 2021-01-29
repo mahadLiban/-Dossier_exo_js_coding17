@@ -557,24 +557,24 @@ console.log(maFonction(12 , 54)); */
 console.log(maFonction("sALRUDJD")); */
 
 /* # Exo 9 Calcul */
-/* let  monCalcul = (nombre, secondNombre, opera) => {
+/*  let  monCalcul = (nombre, secondNombre, opera) => {
   
   switch (opera) {
        case "*":
         return(nombre*secondNombre)
-       break;
+       
        case "+":
         return(nombre+secondNombre)
-       break; 
+        
        case "-":
         return(nombre-secondNombre)
-       break; 
+        
        case "/":
         return(nombre/secondNombre)
-       break; 
+        
        default:
         return("a quoi tu joues ? on veut un opé!")
-           break;
+          
    }
   
 }
@@ -584,4 +584,9 @@ console.log(monCalcul(5,5,"*"));
  let valeur2= parseInt(prompt("donne un nombre"))
  let opera= prompt("donne moi une operation")
 
- alert(monCalcul(valeur1 ,valeur2,opera))  */
+ alert(monCalcul(valeur1 ,valeur2,opera)) 
+
+
+ */
+
+
