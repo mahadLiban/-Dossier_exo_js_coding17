@@ -589,4 +589,250 @@ console.log(monCalcul(5,5,"*"));
 
  */
 
+/* EXO_MIDDLE_FONCTIONS_2.md */
+/*# Exo 1 reverseNumber*/
+/* let reverseNumber = (nombre) =>{
+  nombre = nombre +""
+  return nombre.split("").reverse().join("");
+}
+console.log(reverseNumber(123456)); */
 
+/* # Exo 2 Pair */
+/* let estPair = (nbr)=>{
+
+  switch (nbr%2) {
+    case 1:
+      return("pas pair")
+    case 0:
+      return(" pair")      
+    default:
+      return ('ta pas mis un nombre')
+  }
+
+
+}
+
+console.log(estPair(5));
+ */
+
+ /* # Exo 3 logIn */
+
+ /* let logIn = () => {
+  let mdp 
+  do{ 
+   mdp = prompt('Quelle est le mdp?')
+  } while (mdp !== 'tqt') 
+  alert("t'es co")
+ }
+ logIn() 
+  */
+
+/* EXO_challenge_fonction */
+/* # Exo 1 Classe */
+/*  let codingSchool17 = []
+
+do {
+  let codingSchool17= prompt("remplie le panier")
+
+  codingSchool17 = codingSchool17.charAt(0).toUpperCase()+codingSchool17.slice(1).toLowerCase()
+  codingSchool17.push(codingSchool17)
+
+    
+} while (codingSchool17.length<3);
+console.table(codingSchool17);
+
+let enlever
+let i = 1;
+do {
+  i=0;
+  enlever = prompt("Tu veux enlever un fruit ? "+ codingSchool17)
+  enlever = enlever.charAt(0).toUpperCase()+enlever.slice(1).toLowerCase()
+  if (codingSchool17.includes(enlever)&& enlever!="") {
+    codingSchool17.splice(codingSchool17.indexOf(enlever),1)
+  i++;
+  }
+  
+} while (i>0);
+console.table(codingSchool17);
+alert("Merci bon appétit")  */
+ 
+
+
+/* function estPremier(nbr) {
+  for(let i = 2; i < let; i++)
+    if(nbr%i === 0) return false;
+  return nbr > 1;
+}
+
+console.log(estPremier); */
+/* 
+function nbrPremier(nbr) {
+  for(let i = 2; i < nbr; i++)
+    if(nbr%i === 0) return false;
+  return nbr > 1;
+}
+
+console.log(nbrPremier(2)); */
+
+
+/* Revision_js # Exo 1 Les methods string prompt etc*/
+/* 1 */
+/* let prenom= prompt('Quel est ton prenom ?')
+alert(prenom.charAt(0)) */
+/* 2 */
+/* let prenom= prompt('Quel est ton prenom ?')
+alert(prenom.substr(1))
+ */
+/* 3 */
+
+/* 3 */
+/* let prenom= prompt('Quel est ton prenom ?')
+
+if (prenom.length>=5) {
+  alert(prenom.substr(4,1)) 
+} else {
+  alert('je veux au moin 5 lettres')
+}
+
+ */
+
+ /* 5 */
+
+/*  let min = prompt("Quel est ton prenom? ").toLowerCase()
+ alert(min)
+
+ let maj = prompt("Quel est ton prenom? ").toUpperCase()
+ alert(maj) */
+
+/*  let prenom = prompt("Quel est ton prenom? ")
+ prenom = prenom.charAt(0).toUpperCase()+prenom.slice(1).toLowerCase()
+ alert(prenom)
+
+ let prenom = prompt("Quel est ton prenom? ")
+
+prenom = prenom.charAt(0).toUpperCase()+prenom.slice(1).toLowerCase()
+ alert(prenom)
+ */
+
+/*  
+let prenom = prompt("Quel est ton prenom? ")
+
+ prenom = prenom.charAt(0).toLowerCase()+prenom.slice(1).toUpperCase()    
+ 
+ alert(prenom)
+
+ */
+
+
+ /* ## Exo 2(les tableaux) */
+
+
+    /* 2 */
+/*  let tabL = [ "Tu",
+              "Vas",
+              "Te",
+              "Calmer",
+              "Said"]
+
+ */
+
+ /* 3 */
+ /* console.log(tabL[2],tabL[4]); */
+/* tabL */
+  /* 4 */
+/* let tabL = [ "Tu",
+              "Vas",
+               "Te",
+              "Calmer",
+              "Said"]
+              
+tabL[1] = tabL[1].substr().toLowerCase()+tabL[1].slice(1).toUpperCase()   
+
+console.log(tabL[1]);  */
+
+/* 5 */
+/* 
+let tabL = [ "Tu",
+"Vas",
+ "Te",
+"Calmer",
+"Said"]
+
+tabL[3] = tabL[3].charAt(0)
+
+console.log(tabL[3]);  */
+/* 6 */
+/*  let tabL = [  "Tu",
+              "Vas",
+              "Te",
+              "Calmer",
+              "Said"]
+
+tabL[1] = tabL[4].slice(1,5)
+
+console.log(tabL[1]);  */
+ 
+/* 7 */
+
+/* let tabL = [  "tu",
+              "Vas",
+              "Tees",
+              "Calmer",
+              "Said"]
+
+console.log(tabL[0].charAt(0).toLocaleUpperCase()+tabL[0].charAt(1).toLowerCase()); */
+
+/* 8 */
+/* let tabL = [  "tu",
+              "Vas",
+              "Te",
+              "Calmer",
+              "Said"]
+console.log(tabL[0]+tabL[2]); */
+
+/* 9 */
+/* let tabL = [  "tu",
+              "Vas",
+              "Te",
+              "Calmer",
+              "Said"]
+console.log(tabL[2].slice(0).toUpperCase()+" "+tabL[4].toLowerCase()) */
+/* 10 */
+
+let tabL = [  "tu",
+              "vas",
+              "te",
+              "calmer",
+              "said"]
+
+
+/* 
+console.log
+  (tabL[0].charAt(0)+tabL[0].slice(1,2).toUpperCase()
++" "+tabL[1].charAt(0)+tabL[1].slice(1,2).toUpperCase()
++" "+tabL[2].charAt(0)+tabL[2].slice(1,2).toUpperCase()
++" "+tabL[3].charAt(0)+tabL[2].slice(1,2).toUpperCase()
++" "+tabL[4].charAt(0)+tabL[4].slice(1,2).toUpperCase());
+
+
+ */
+
+/*  let tabNew = []
+ tabL.forEach(e => {
+   e=e.charAt(0).toLowerCase()+e.charAt(1).toUpperCase()
+   tabNew.push(e)
+ })
+ console.log(tabNew); */
+
+ /* ## Exo 3(boucle forEach) Partie 1 */
+
+ let prenom = [
+"Camille",
+ "Anais",
+ "Axel",
+ "Arthur",
+ "Evan",
+ "Clara",
+ "Emma",
+ "Charlotte",
+ "Adrien"]
