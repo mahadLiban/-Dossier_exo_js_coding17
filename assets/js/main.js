@@ -799,13 +799,13 @@ console.log(tabL[0]+tabL[2]); */
 console.log(tabL[2].slice(0).toUpperCase()+" "+tabL[4].toLowerCase()) */
 /* 10 */
 
-let tabL = [  "tu",
+/* let tabL = [  "tu",
               "vas",
               "te",
               "calmer",
               "said"]
 
-
+ */
 /* 
 console.log
   (tabL[0].charAt(0)+tabL[0].slice(1,2).toUpperCase()
@@ -825,8 +825,8 @@ console.log
  console.log(tabNew); */
 
  /* ## Exo 3(boucle forEach) Partie 1 */
-
- let prenom = [
+/*exo1  */
+/*  let prenom = [
 "Camille",
  "Anais",
  "Axel",
@@ -835,4 +835,60 @@ console.log
  "Clara",
  "Emma",
  "Charlotte",
- "Adrien"]
+ "Adrien"] */
+ /* exo2 */
+/*  console.log(prenom); */
+/* exo 3 */
+/* 
+prenom.forEach(e => {
+ console.log( e=e.charAt(0))
+})
+ */
+/* 4 */
+/* prenom.forEach(e => {
+  console.log( e=e.charAt(1))
+ }) */
+ /* 5 */
+/*  prenom.forEach(e => {
+  console.log( e=e.charAt(1)+" "+e)
+ }) */
+/* 6 */
+/* prenom.forEach(e => {
+  if (e.length%2!==0) {
+    console.log()
+  } else {
+    console.log(e)
+  }
+ })  */
+
+ /* ## Exo 3(boucle forEach) Partie 2*/
+ /* exo1 */
+ let prenom = [
+  "camille",
+   "anais",
+   "axel",
+   "arthur",
+   "evan",
+   "clara",
+   "emma",
+   "charlotte",
+   "adrien"]
+   /* exo 2 */
+   /* prenom.forEach(e => {
+    if (e.length%2!==0) {
+      console.log(e.toUpperCase()); 
+    } else {
+      console.log()
+    }
+   }) */
+
+/* exo3 */
+/* prenom.forEach(e => {
+  if (e.length%2!==0) {
+    console.log(); 
+  } else {
+    console.log(e.charAt(0).toUpperCase()+e.substring(1))
+  }
+ })
+   
+ */
